@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="388.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.TableController">
+   <children>
+      <TableView fx:id="table" layoutX="22.0" layoutY="49.0" prefHeight="273.0" prefWidth="498.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="96.0" text="ID" />
+          <TableColumn fx:id="c2" prefWidth="96.0" text="Name" />
+            <TableColumn fx:id="c3" prefWidth="107.0" text="SSN" />
+            <TableColumn fx:id="c4" prefWidth="94.0" text="Address" />
+            <TableColumn fx:id="c5" prefWidth="99.0" text="Department" />
+        </columns>
+      </TableView>
+      <Text fx:id="text" layoutX="222.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Table" />
+      <Button fx:id="btn_add" layoutX="86.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleADD" text="Add" />
+      <Button fx:id="tf_update" layoutX="402.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+   </children>
+</AnchorPane>
